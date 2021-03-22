@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeTasks.Data", "HomeTasks
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeTasks.Business", "HomeTasks.Business\HomeTasks.Business.csproj", "{FEB60D3B-358D-4FCC-AB03-82D6309CE997}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeTasks.API", "HomeTasks.API\HomeTasks.API.csproj", "{18704618-736F-4F10-9B48-B45E048EEF04}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -58,5 +60,17 @@ Global
 		{FEB60D3B-358D-4FCC-AB03-82D6309CE997}.Release|x64.Build.0 = Release|Any CPU
 		{FEB60D3B-358D-4FCC-AB03-82D6309CE997}.Release|x86.ActiveCfg = Release|Any CPU
 		{FEB60D3B-358D-4FCC-AB03-82D6309CE997}.Release|x86.Build.0 = Release|Any CPU
+		{18704618-736F-4F10-9B48-B45E048EEF04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18704618-736F-4F10-9B48-B45E048EEF04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18704618-736F-4F10-9B48-B45E048EEF04}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{18704618-736F-4F10-9B48-B45E048EEF04}.Debug|x64.Build.0 = Debug|Any CPU
+		{18704618-736F-4F10-9B48-B45E048EEF04}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{18704618-736F-4F10-9B48-B45E048EEF04}.Debug|x86.Build.0 = Debug|Any CPU
+		{18704618-736F-4F10-9B48-B45E048EEF04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18704618-736F-4F10-9B48-B45E048EEF04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18704618-736F-4F10-9B48-B45E048EEF04}.Release|x64.ActiveCfg = Release|Any CPU
+		{18704618-736F-4F10-9B48-B45E048EEF04}.Release|x64.Build.0 = Release|Any CPU
+		{18704618-736F-4F10-9B48-B45E048EEF04}.Release|x86.ActiveCfg = Release|Any CPU
+		{18704618-736F-4F10-9B48-B45E048EEF04}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
