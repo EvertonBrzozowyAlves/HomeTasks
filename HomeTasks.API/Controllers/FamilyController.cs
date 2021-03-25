@@ -19,16 +19,16 @@ namespace HomeTasks.API.Controllers
 
         [HttpPost]
         [Route("[action]")]
-        public int RegisterNew(BaseRequest request)
+        public BaseResponse RegisterNew(BaseRequest request)
         {
             try
             {
-                return 0;
+                throw new NotImplementedException();
             }
             catch (Exception e)
             {
                 _logger.LogError(e.ToString());
-                return -1;
+                throw new NotImplementedException();
             }
         }
     }

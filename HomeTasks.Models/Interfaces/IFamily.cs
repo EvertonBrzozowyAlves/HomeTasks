@@ -4,6 +4,6 @@ namespace HomeTasks.Models.Interfaces
 {
     public interface IFamily
     {
-        int RegisterNew(BaseRequest request);
+        BaseResponse RegisterNew(BaseRequest request);
     }
 }
