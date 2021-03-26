@@ -1,12 +1,21 @@
-using HomeTasks.Models.Entities;
+using System;
+using HomeTasks.Models.Entities.MethodModels.FamilyModel;
 
 namespace HomeTasks.Data.Family.Implementations
 {
     public class FamilyData : IFamilyData
     {
-        public BaseResponse RegisterNew(BaseRequest request)
+        public FamilyRegisterNewResponseModel RegisterNew(FamilyRegisterNewRequestModel request)
         {
-            throw new System.NotImplementedException();
+            try
+            {
+                throw new NotImplementedException();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
         }
     }
 }

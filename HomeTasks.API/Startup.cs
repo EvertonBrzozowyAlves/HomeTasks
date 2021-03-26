@@ -1,3 +1,6 @@
+using System;
+using System.IO;
+using HomeTasks.Configuration;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -21,7 +24,24 @@ namespace HomeTasks.API
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo {Title = "HomeTasks.API", Version = "v1"});
+                c.SwaggerDoc("v1",
+                    new OpenApiInfo
+                    {
+                        Title = "HomeTasks.API",
+                        Version = "v1",
+                        Description = "Api to provide resources for the HomeTasks project",
+                        Contact = new OpenApiContact()
+                        {
+                            Name = "Everton Brzozowy Alves",
+                            Url = new Uri("https://github.com/EvertonBrzozowyAlves/")
+                        }
+                    });
+
+                var filePath = Path.Combine(System.AppContext.BaseDirectory, "HomeTasks.API.xml");
+                c.IncludeXmlComments(filePath);
+                c.IgnoreObsoleteActions();
+                c.IgnoreObsoleteProperties();
+                services.RegisterDependencies();
             });
         }
 

@@ -1,5 +1,6 @@
 ﻿using System;
-using HomeTasks.Models.Entities;
+using HomeTasks.Business.Family;
+using HomeTasks.Models.Entities.MethodModels.FamilyModel;
 using HomeTasks.Models.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -11,19 +12,27 @@ namespace HomeTasks.API.Controllers
     public class FamilyController : ControllerBase, IFamily
     {
         private readonly ILogger<FamilyController> _logger;
+        private readonly IFamilyBusiness _business;
 
-        public FamilyController(ILogger<FamilyController> logger)
+        public FamilyController(ILogger<FamilyController> logger, IFamilyBusiness business)
         {
             _logger = logger;
+            _business = business;
         }
 
+        /// <summary>
+        /// Register a new family
+        /// </summary>
+        /// <param name="request"></param>
+        /// <returns></returns>
+        /// <exception cref="NotImplementedException"></exception>
         [HttpPost]
-        [Route("[action]")]
-        public BaseResponse RegisterNew(BaseRequest request)
+        [Route("")]
+        public FamilyRegisterNewResponseModel RegisterNew([FromBody] FamilyRegisterNewRequestModel request)
         {
             try
             {
-                throw new NotImplementedException();
+                return _business.RegisterNew(request);
             }
             catch (Exception e)
             {

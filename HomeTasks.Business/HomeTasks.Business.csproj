@@ -1,6 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
+    <ProjectReference Include="..\HomeTasks.Data\HomeTasks.Data.csproj" />
     <ProjectReference Include="..\HomeTasks.Models\HomeTasks.Models.csproj" />
   </ItemGroup>
 

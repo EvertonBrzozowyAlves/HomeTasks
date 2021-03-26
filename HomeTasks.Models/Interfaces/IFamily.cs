@@ -1,9 +1,9 @@
-using HomeTasks.Models.Entities;
+using HomeTasks.Models.Entities.MethodModels.FamilyModel;
 
 namespace HomeTasks.Models.Interfaces
 {
     public interface IFamily
     {
-        BaseResponse RegisterNew(BaseRequest request);
+        FamilyRegisterNewResponseModel RegisterNew(FamilyRegisterNewRequestModel request);
     }
 }
